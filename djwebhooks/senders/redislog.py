@@ -20,7 +20,7 @@ WEBHOOK_OWNER_FIELD = getattr(settings, "WEBHOOK_OWNER_FIELD", "username")
 # List the attempts as an iterable of integers.
 #   Each number represents the amount of time to be slept between attempts
 #   The first number should always be 0 so no time is wasted.
-WEBHOOK_ATTEMPTS = getattr(settings, "WEBHOOK_EVENTS", (0, 15, 30, 60))
+WEBHOOK_ATTEMPTS = getattr(settings, "WEBHOOK_ATTEMPTS", (0, 15, 30, 60))
 
 
 # Set up redis coonection
